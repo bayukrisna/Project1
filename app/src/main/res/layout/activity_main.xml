@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -96,7 +101,41 @@
         android:layout_height="wrap_content"
         android:entries="@array/jurusan"/>
 
-    <Button
+        <TextView
+            android:id="@+id/textViewEks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kegiatan Ekstrakurikuler"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxBas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Basket"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxVol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Voli"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxFut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Futsal"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxPas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Paskibra"/>
+
+        <Button
         android:id="@+id/buttonOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -109,3 +148,4 @@
         android:text="Hasil"/>
 
 </LinearLayout>
+</ScrollView>
