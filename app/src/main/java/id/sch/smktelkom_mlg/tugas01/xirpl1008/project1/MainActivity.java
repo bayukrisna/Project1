@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         String asal = etAsal.getText().toString();
         String hasil = null;
         String jurusan = spJurusan.getSelectedItem().toString();
-        String ekstra = "\nEkstrakurikuler         : ";
+        String ekstra = "\nEkstrakurikuler   : ";
 
         int startlen = ekstra.length();
         if (cbBas.isChecked()) ekstra += cbBas.getText() + ",";
@@ -86,8 +86,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         } else {
             etAsal.setError(null);
         }
-        tvHasil.setText("Nama       : " + nama + "\n" + "\n" + "Asal SMP        : " + asal + "\n" + "\n" +
-                "Jenis Kelamin      : " + hasil + "\n" + "\nJurusan      : " + jurusan + "\n" + ekstra);
+        tvHasil.setText("Nama                   : " + nama + "\n" + "\n" + "Asal SMP            : " + asal + "\n" + "\n" +
+                "Jenis Kelamin    : " + hasil + "\n" + "\nJurusan               : " + jurusan + "\n" + ekstra);
     }
 
 
@@ -95,6 +95,6 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if (isChecked) nEks += 1;
         else nEks -= 1;
-        tvEks.setText("Hobi " + nEks + " terpilih)");
+        tvEks.setText("Ekstrakurikuler " + nEks + " terpilih)");
     }
 }
