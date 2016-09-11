@@ -37,9 +37,9 @@ DETEKSI KESALAHAN
 <br>
 
 ### D. (SCREENSHOOT)
-<p> https://postimg.org/image/kcrryh95f/ </p>
-<p> https://postimg.org/image/9r7wmh2tv/ </p>
-<p> https://postimg.org/image/4tuc1d0ur/ </p>
-<p> https://postimg.org/image/6a5uji3rn/ </p>
-<p> https://postimg.org/image/ypl7wst5f/ </p>
-<p> https://postimg.org/image/uf6k17o2b/ </p>
+![hasil 1] (https://s5.postimg.org/3zcdt2idz/hasil_1.png)
+![hasil 2] (https://s5.postimg.org/52wi51313/hasil_2.png)
+![hasil 3 ke 1] (https://s5.postimg.org/r3culnlp3/hasil_3_ke_1.png)
+![hasil 3 ke 2] (https://s5.postimg.org/qrve8w593/hasil_3_ke_2.png)
+![hasil 4 final] (https://s5.postimg.org/f41cecg47/hasil_4_final.png)
+![hasil 4 final 2] (https://s5.postimg.org/bygqo4xhz/hasil_4_final_2.png)
