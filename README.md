@@ -37,9 +37,13 @@ TEMA / TOPIK :
 <br>
 
 ### D. (SCREENSHOOT)
+- Setelah Komit 1 (Penambahan 2 editText dan Button) <br>
 ![hasil 1] (https://s5.postimg.org/3zcdt2idz/hasil_1.png)
+- Setelah Komit 2 (Penambahan Spinner dan RadioButton) <br>
 ![hasil 2] (https://s5.postimg.org/52wi51313/hasil_2.png)
+- Setelah Komit 3 (Penambahan Checkbox) <br>
 ![hasil 3 ke 1] (https://s5.postimg.org/r3culnlp3/hasil_3_ke_1.png)
 ![hasil 3 ke 2] (https://s5.postimg.org/qrve8w593/hasil_3_ke_2.png)
+- Setelah Komit Terakhir (Merapikan) <br>
 ![hasil 4 final 1] (https://s5.postimg.org/m7sifocyf/hasil_final_1.png)
 ![hasil 4 final 2] (https://s5.postimg.org/r7pynmil3/hasil_final_2.png)
