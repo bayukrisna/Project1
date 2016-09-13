@@ -1,22 +1,22 @@
 # Project1 | 
 
-### A. (PENJELSASAN)
+### A. (PENJELASAN)
 
 TEMA / TOPIK :
 <br> Pengisian Formulir Pendaftaran Siswa Baru SMK TELKOM Malang
 
-ISI
+#### ISI
 - Input Nama (edit text)
 - Input Asal SMP (edit text)
 - Pilih Jenis Kelamin (radio button)
 - Pilih Jurusan (spinner)
 - Pilih Ekstrakurikuler (checkbox)
 
-KEGUNAAN
+#### KEGUNAAN
 - Agar lebih mudah mendaftarkan diri untuk sekolah di SMK Telkom tanpa menggunakan formulir kertas.
 - Pendaftaran lebih praktis, hemat, dan cepat karena dilakukan melalui aplikasi.
 
-DETEKSI KESALAHAN
+#### DETEKSI KESALAHAN
 - Input Nama (tidak diisi, minimal 3 karakter)
 - Input Asal SMP (tidak diisi)
 
