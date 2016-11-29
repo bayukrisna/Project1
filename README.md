@@ -23,7 +23,7 @@ TEMA / TOPIK :
 <br>
 
 ### B. (LINK DOWNLOAD)
-<p> http://www.mediafire.com/download/l19r5ahr5q5k2f2/app-debug.apk </p>
+<p> http://www.mediafire.com/file/74ocdkag4i5azry/app-debug%283%29.apk </p>
 
 <br>
 
