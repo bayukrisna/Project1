@@ -53,43 +53,71 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     }
 
     private void doClick() {
+
+        if (isValid()) {
+            String nama = etNama.getText().toString();
+            String asal = etAsal.getText().toString();
+            String hasil = null;
+            String jurusan = spJurusan.getSelectedItem().toString();
+            String ekstra = "\nEkstrakurikuler   : ";
+
+            int startlen = ekstra.length();
+            if (cbBas.isChecked()) ekstra += cbBas.getText() + ",";
+            if (cbVol.isChecked()) ekstra += cbVol.getText() + ",";
+            if (cbFut.isChecked()) ekstra += cbFut.getText() + ",";
+            if (cbPas.isChecked()) ekstra += cbPas.getText();
+
+            if (ekstra.length() == startlen) ekstra += "Tidak ada pada pilihan";
+
+            if (rgJK.getCheckedRadioButtonId() != -1) {
+                RadioButton rb = (RadioButton)
+                        findViewById(rgJK.getCheckedRadioButtonId());
+                hasil = rb.getText().toString();
+            }
+
+            if (nama.isEmpty()) {
+                etNama.setError("Nama Belum Diisi");
+            } else if (nama.length() < 3) {
+                etNama.setError("Nama Minimal 3 Karakter");
+            } else {
+                etNama.setError(null);
+            }
+
+            if (asal.isEmpty()) {
+                etAsal.setError("Asal SMP Belum Diisi");
+            } else {
+                etAsal.setError(null);
+            }
+            tvHasil.setText("Nama                   : " + nama + "\n" + "\n" + "Asal SMP            : " + asal + "\n" + "\n" +
+                    "Jenis Kelamin    : " + hasil + "\n" + "\nJurusan               : " + jurusan + "\n" + ekstra);
+        }
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
         String nama = etNama.getText().toString();
         String asal = etAsal.getText().toString();
-        String hasil = null;
-        String jurusan = spJurusan.getSelectedItem().toString();
-        String ekstra = "\nEkstrakurikuler   : ";
-
-        int startlen = ekstra.length();
-        if (cbBas.isChecked()) ekstra += cbBas.getText() + ",";
-        if (cbVol.isChecked()) ekstra += cbVol.getText() + ",";
-        if (cbFut.isChecked()) ekstra += cbFut.getText() + ",";
-        if (cbPas.isChecked()) ekstra += cbPas.getText();
-
-        if (ekstra.length() == startlen) ekstra += "Tidak ada pada pilihan";
-
-        if (rgJK.getCheckedRadioButtonId() != -1) {
-            RadioButton rb = (RadioButton)
-                    findViewById(rgJK.getCheckedRadioButtonId());
-            hasil = rb.getText().toString();
-        }
+        TextView JK = (TextView) findViewById(R.id.textView);
+        TextView Jur = (TextView) findViewById(R.id.textViewJurusan);
 
         if (nama.isEmpty()) {
-            etNama.setError("Nama Belum Diisi");
-        } else if (nama.length() < 3) {
-            etNama.setError("Nama Minimal 3 Karakter");
-        } else {
-            etNama.setError(null);
+            etNama.setError("Nama Belum diisi");
+            valid = false;
         }
 
         if (asal.isEmpty()) {
-            etAsal.setError("Asal SMP Belum Diisi");
-        } else {
-            etAsal.setError(null);
+            etAsal.setError("Nama Belum diisi");
+            valid = false;
         }
-        tvHasil.setText("Nama                   : " + nama + "\n" + "\n" + "Asal SMP            : " + asal + "\n" + "\n" +
-                "Jenis Kelamin    : " + hasil + "\n" + "\nJurusan               : " + jurusan + "\n" + ekstra);
+        if (cbBas.isChecked() || cbVol.isChecked() || cbFut.isChecked() || cbPas.isChecked()) {
+            valid = true;
+            JK.setError(null);
+        } else {
+            JK.setError("Belum Memilih Jenis Kelamin");
+            valid = false;
+        }
+        return valid;
     }
-
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
